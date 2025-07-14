@@ -7,28 +7,41 @@ body {
   line-height: 1.6;
 }
 
-header {
+header.hero {
   text-align: center;
-  padding: 2em 1em;
-  background: #ffffff;
-  border-bottom: 1px solid #ddd;
+  padding: 2em 1em 1.5em;
+  background: #fff;
+  border-bottom: 1px solid #eee;
 }
 
 .logo {
-  width: 80px;
-  height: 80px;
-  border-radius: 16px;
-  margin-bottom: 1em;
+  width: 72px;
+  height: 72px;
+  border-radius: 20%;
+  margin-bottom: 0.8em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+
+.title {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin: 0.2em 0 0.3em;
+  color: #222;
 }
 
 .subtitle {
-  font-size: 1.1em;
+  font-size: 1em;
   color: #666;
+  margin: 0 0 1em;
 }
 
 .appstore-badge {
   width: 160px;
-  margin-top: 1em;
+  transition: transform 0.2s ease;
+}
+
+.appstore-badge:hover {
+  transform: scale(1.05);
 }
 
 main {
